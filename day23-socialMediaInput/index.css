@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none !important;
+
+    font-family: 'Fira Code', monospace;
+    background-color: #191919;
+    color: white;
+    font-weight: 400;
+}
+
+
+body {
+    padding: 2.5vh 2vw;
+}
+
+p,
+input,
+textarea {
+    font-size: 18px;
+    padding-top: 5px;
+    outline-width: 0;
+    outline: none;
+    /* background-color: red; */
+    /* width: fit-content !important; */
+    word-wrap: break-word;
+    /* float: left; */
+    flex-grow: 1;
+}
+
+
+
+textarea {
+    resize: none;
+    /* overflow: visible; */
+    min-height: 18px;
+    overflow: hidden;
+
+}
+
+
+
+.input-line,
+.new-command {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.text-color-yellow {
+    color: yellow;
+}
+
+
+.cli-new-command,
+.dollar-sign {
+    display: inline-block;
+    width: fit-content;
+    margin-right: 6px;
+    flex-grow: 0;
+}
+
+input:-webkit-autofill,
+input:-internal-autofill-previewed,
+input:-internal-autofill-selected {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-text-fill-color: #191919 !important;
+}
+
+.cli-error {
+    color: #00FF99;
+}
+
+.chars-limit-error {
+    color: red;
+}
+
+.command-section {
+    margin-top: 10px;
+}

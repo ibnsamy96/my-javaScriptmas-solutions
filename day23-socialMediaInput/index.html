@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Simple CLI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* width of vertical & height of horizontal scrollbars */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>Twitter Simple CLI</p>
+        <p>Copyright (C) NoBody. All rights aren't reserved.</p>
+        <p>
+            < ibnsamy96@gmail.com || github:@ibnsamy96>
+        </p>
+    </header>
+    <br />
+    <main class="code-container">
+        <!-- main section in html -->
+        <section id='account-name-section'>
+            <div class="cli-regular-text">
+                <p class="cli-new-command">>_ C:\Users> add-user.tweet</p>
+                <p>What is your twitter username? (<span class="text-color-yellow">write it without @.</span> ex =>
+                    ibnsamy96 not @ibnsamy96)</p>
+            </div>
+            <div class="command-response">
+                <div class="input-line">
+                    <p class="dollar-sign">$</p>
+                    <textarea class='account-name' autofocus oninput="auto_grow(this)"></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        console.log = () => {}
+        console.error = () => {}
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
